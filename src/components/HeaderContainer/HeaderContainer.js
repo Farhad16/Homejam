@@ -2,6 +2,7 @@ import React from 'react';
 import Branding from './Branding/Branding';
 import './HeaderContainer.scss'
 import Navbar from './Navbar/Navbar';
+import Progressbar from './Progressbar/Progressbar';
 
 const HeaderContainer = () => {
   return (
@@ -9,6 +10,7 @@ const HeaderContainer = () => {
       <div className="container">
         <Navbar />
         <Branding />
+        <Progressbar />
       </div>
     </div>
   );
