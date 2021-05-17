@@ -1,0 +1,154 @@
+.review-container {
+  & .label {
+    & span {
+      color: #fff !important;
+    }
+  }
+
+  & .reviews {
+    & .review-data {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+
+      & .card {
+        background: #0A0B1A;
+        border: 2px solid #E5AF56;
+        border-radius: 16px;
+        border-top-right-radius: 0px;
+        width: 360px;
+        height: 230px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 98%;
+          height: 8px;
+          background: linear-gradient(143.63deg, #276C73 5.43%, #5293E8 110.6%);
+          top: -11px;
+          left: 10px;
+          border-top-left-radius: 10px;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 8px;
+          height: 230px;
+          background: linear-gradient(143.63deg, #5293E8 110.6%, #276C73 5.43%);
+          top: -11px;
+          right: -10px;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 10px;
+        }
+
+        & .card-body {
+          & .work_at {
+            background: #E5C558;
+            font-family: Nunito;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 14px;
+            color: #682F26;
+            padding: 3px 8px;
+          }
+
+          & h3 {
+            font-family: Libre Baskerville;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 40px;
+            color: #FFFFFF;
+          }
+
+          & .more {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+
+            & span {
+              font-family: Nunito;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 32px;
+              color: #0259EB;
+            }
+
+            & img {
+              height: 40px;
+              width: 40px;
+            }
+
+            &::after {
+              content: "";
+              width: 1px;
+              height: 40px;
+              background: #FFFFFF;
+              opacity: .1;
+              position: absolute;
+              right: 45px;
+            }
+          }
+
+          & .card-title {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            & img {
+              width: 48px;
+              height: 48px;
+            }
+
+            & .about {
+              margin-left: 20px;
+
+              & span {
+                font-family: Quattrocento;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 32px;
+                color: #FFFFFF;
+              }
+
+              & .location {
+                & img {
+                  width: 24px;
+                  height: 24px;
+                }
+
+                & span {
+                  font-family: Nunito;
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 11px;
+                  line-height: 16px;
+                  text-transform: uppercase;
+                  color: #E5C558;
+                  margin-left: 10px;
+                }
+              }
+            }
+          }
+        }
+
+        & .card-text {
+          font-family: Nunito;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 24px;
+          color: #FFFFFF;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+
+}
