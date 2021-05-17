@@ -6,7 +6,7 @@ const HeaderContainer = () => {
   return (
     <div className="header-container">
       <div className="container">
-        <Navbar />
+        {/* <Navbar /> */}
       </div>
     </div>
   );
