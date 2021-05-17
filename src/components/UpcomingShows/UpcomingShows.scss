@@ -1,0 +1,129 @@
+.upcoming-container,
+.review-container {
+  background: #0A0B1A;
+
+  & .label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & h2 {
+      font-family: Libre Baskerville;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 32px;
+      line-height: 40px;
+      display: flex;
+      color: #FFFFFF;
+      position: relative;
+
+      &::before {
+        content: '';
+        width: 45px;
+        height: 4px;
+        background: #0259EB;
+        position: absolute;
+        bottom: -10px;
+      }
+    }
+
+    & span {
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: #E5C558;
+    }
+  }
+
+  & .shows {
+    & .showdata {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+
+      & .card {
+        background: #111229;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 98%;
+          height: 10px;
+          background: linear-gradient(163.41deg, #301A68 0.11%, #301A68 170.69%);
+          top: -10px;
+          left: 5px;
+          border-top-left-radius: 10px;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: 380px;
+          background: linear-gradient(163.41deg, #301A68 0.11%, #234C97 170.69%);
+          top: -10px;
+          right: -10px;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 10px;
+        }
+
+        & .card-body {
+          & .work_at {
+            background: #E5C558;
+            font-family: Nunito;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 14px;
+            color: #682F26;
+            padding: 3px 8px;
+          }
+
+          & h3 {
+            font-family: Libre Baskerville;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 40px;
+            color: #FFFFFF;
+          }
+
+          & .more {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+
+            & span {
+              font-family: Nunito;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 32px;
+              color: #0259EB;
+            }
+
+            & img {
+              height: 40px;
+              width: 40px;
+            }
+
+            &::after {
+              content: "";
+              width: 1px;
+              height: 40px;
+              background: #FFFFFF;
+              opacity: .1;
+              position: absolute;
+              right: 45px;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
